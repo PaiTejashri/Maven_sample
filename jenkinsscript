@@ -11,10 +11,10 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                withCredentials([sshUserPrivateKey(credentialsId: 'PaiTejashri', password: 'Paiteju@23')]) {
+                withCredentials([sshUserPrivateKey(credentialsId: 'PaiTejashri', password: 'Paiteju@23')]) 
+                {
                 git 'https://github.com/PaiTejashri/Maven_sample.git'
-                }
-            }    
+                }    
     // some block
 }
 
